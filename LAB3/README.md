@@ -1,12 +1,3 @@
-Lab 3
-Setup Details
-By this time, I hope all of you will be able to pull the changes (if any from the GitHub site) and push the changes to GitHub after coding.
-For lab 3, similarly, for other labs, you need to create a folder named "Lab 3," inside which you will have the code and the README.md documentation file.
-Make sure you are using comments in the code and documenting the results, how to run the code, what the code is, what the constraints for your code are, the flow chart of the program, and making the document beautiful.
-If not, you can modify the README.md files of the other labs' README.md files to make the documentation proper (It will also be considered for marking).
-
-Try out GitHub code spaces for this lab !!
-
 Todays Lab
 Create a java program, that stores the details of a student (Name, Register Number, Email, Class, Department).
 You can use a two-dimensional array to store the details.

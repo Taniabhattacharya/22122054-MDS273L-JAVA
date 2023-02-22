@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class plab3{
+class lab3{
     static String[][] details = new String[1024][5]; // 2-dimensional array to store the details of up to 1024 students
     static String[] names = new String[1024]; // static array to store the names that the user has entered
     static int count = 0; // to keep track of the number of students entered
@@ -68,14 +68,19 @@ class plab3{
             switch (choice) {
                 case 1:
                     collectDetails();
+                    break;
                 case 2:
                     displayDetails();
+                    break;
                 case 3:
                     searchDetails(null);
+                    break;
                 case 4:
                     System.exit(choice);
+                    break;
                 default:
                     System.out.println("Invalid Choice ! ! !");
+                    break;
             }
         }
         }
