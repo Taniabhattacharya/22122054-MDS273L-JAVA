@@ -1,100 +1,140 @@
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
 
 public class lab4 {
-    private int accountNumber;
-    private String accountHolderName;
-    private double accountBalance;
-    private ArrayList<String> transactions;
 
-    public void initializeAccount(int accountNumber, String accountHolderName, double accountBalance) {
-        this.accountNumber = accountNumber;
-        this.accountHolderName = accountHolderName;
-        this.accountBalance = accountBalance;
-        this.transactions = new ArrayList<String>();
-        this.transactions.add(String.format("Account initialized with balance of %.2f", accountBalance));
-    }
+    public static final Scanner sc = new Scanner(System.in);
 
-    public void deposit(double amount) {
-        this.accountBalance += amount;
-        this.transactions.add(String.format("Deposited %.2f", amount));
-    }
-    public void withdraw(double amount) {
-        if (this.accountBalance < amount) {
-            System.out.println("Insufficient funds");
-        } else {
-            this.accountBalance -= amount;
-            this.transactions.add(String.format("Withdrawn %.2f", amount));
-        }
-    }
+    static String Acc_Num;
+    static String Acc_Holder;
+    static int Acc_Bal;
 
-    public void printTransactions() {
-        for (String transaction : this.transactions) {
-            System.out.println(transaction);
-        }
-    }
+    static String[][] transactions = new String[100][5];
+    static int iii = 0;
 
-    public void printSummary() {
-        System.out.println("Account Number: " + this.accountNumber);
-        System.out.println("Account Holder Name: " + this.accountHolderName);
-        System.out.println("Account Balance: " + this.accountBalance);
-    }
+static void InitializeTheCustomer(){
+    System.out.println("\n1. Initialize the customer\n");
 
-    public static void main(String[] args) {
-        BankAccount account = new BankAccount();
-        Scanner scanner = new Scanner(System.in);
-        boolean quit = false;
-        int choice;
+    System.out.print("\nEnter customer name:");
+    Acc_Holder = sc.nextLine();
 
-        System.out.print("Enter Account Number: ");
-        int accountNumber = scanner.nextInt();
-        System.out.print("Enter Account Holder Name: ");
-        String accountHolderName = scanner.next();
-        System.out.print("Enter Account Balance: ");
-        double accountBalance = scanner.nextDouble();
-        account.initializeAccount(accountNumber, accountHolderName, accountBalance);
+    System.out.print("\nEnter Account Number:");
+    Acc_Num = sc.nextLine();
 
-        do {
-            System.out.println("1. Deposit");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Print Transactions");
-            System.out.println("4. Print Account Summary");
-            System.out.println("0. Quit");
-            System.out.print("Enter choice: ");
-            choice = scanner.nextInt();
+    System.out.print("\nEnter Balance:");
+    Acc_Bal = Integer.parseInt(sc.nextLine());
 
-            switch (choice) {
-                case 0:
-                    quit = true;
-                    break;
-                case 1:
-                    System.out.print("Enter amount to deposit: ");
-                    double depositAmount = scanner.nextDouble();
-                    account.deposit(depositAmount);
-                    break;
-                case 2:
-                    System.out.print("Enter amount to withdraw: ");
-                    double withdrawAmount = scanner.nextDouble();
-                    account.withdraw(withdrawAmount);
-                    break;
-                case 3:
-                    account.printTransactions();
-                    break;
-                case 4:
-                    account.printSummary();
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-                    break;
-            }
-        } while (!quit);
+    System.out.println("\nCustomer added Successfully\n");
 
-        scanner.close();
-    }
 }
 
+static void depositMoney(){
+    System.out.println("\n2. Deposit Money\n");
+
+    System.out.print("Enter Amount: ");
+    int deposite = Integer.parseInt(sc.nextLine());
+    int old_bal = Acc_Bal;
+    Acc_Bal = Acc_Bal + deposite;
+
+    DateTimeFormatter dt = DateTimeFormatter.ofPattern("yyyy/MM/dd    HH:mm:ss");
+    LocalDateTime cr_dt = LocalDateTime.now();
 
 
+    iii++;
+    transactions[iii][0] = "Deposite";
+    transactions[iii][1] = ""+deposite;
+    transactions[iii][2] = ""+Acc_Bal;
+    transactions[iii][3] = ""+dt.format(cr_dt);
+    transactions[iii][4] = ""+old_bal;
 
+    System.out.println("Your New Balance: "+Acc_Bal);
+}
 
+static void WithdrawMoney(){
+    System.out.println("\n3. Withdraw Money\n````````````````````````````````");
+    int old_bal = Acc_Bal;
+    System.out.print("Enter Amount: ");
+    int Withdraw = Integer.parseInt(sc.nextLine());
 
+    if(Acc_Bal <= 0 || Acc_Bal < Withdraw){
+        System.out.println("ERROR: Insufficient balance.");
+    }else{
+        Acc_Bal = Acc_Bal - Withdraw;
+    }
+
+    DateTimeFormatter dt = DateTimeFormatter.ofPattern("yyyy/MM/dd    HH:mm:ss");
+    LocalDateTime cr_dt = LocalDateTime.now();
+
+    iii++;
+    transactions[iii][0] = "Withdraw";
+    transactions[iii][1] = ""+Withdraw;
+    transactions[iii][2] = ""+Acc_Bal;
+    transactions[iii][3] = ""+dt.format(cr_dt);
+    transactions[iii][4] = ""+old_bal;
+
+    System.out.println("Your New Balance: "+Acc_Bal);
+}
+
+static void showTransactoins(){
+    System.out.println("\n3. Withdraw Money\n````````````````");
+
+    System.out.println("transaction Ammount   Old Balance New Balance DATE        TIME");
+    for(String[] s: transactions){
+        if(s[0]==null){
+            continue;
+        }else{
+            System.out.printf("%-12s"+"%-10s"+"%-12s"+"%-12s"+"%s\n",s[0],s[1],s[4],s[2],s[3]);
+        }
+    }
+    System.out.println("--------------END-------------");
+}
+
+static void accountSummary(){
+    System.out.println("Account Holder Name: "+Acc_Holder);
+    System.out.println("Account Number:"+Acc_Num);
+    System.out.println("Account Balance: "+Acc_Bal);
+
+}
+
+//    ----------------------MAIN---------------------
+    public static void main(String[] args) {
+        boolean flag = true;
+
+        InitializeTheCustomer();
+
+        while(flag){
+            System.out.println("------------MENU----------------");
+            System.out.println("1. deposit money");
+            System.out.println("2. withdraw money");
+            System.out.println("3. print the transactions");
+            System.out.println("4. print account summary");
+            System.out.println("5. Exit");
+            System.out.println("--------------------------------");
+            System.out.print("\nChoose option: ");
+
+            int choice = Integer.parseInt(sc.nextLine());
+
+            switch(choice){
+                case 1:
+                    depositMoney();
+                    break;
+                case 2:
+                    WithdrawMoney();
+                    break;
+                case 3:
+                    showTransactoins();
+                    break;
+                case 4:
+                    accountSummary();
+                    break;
+                case 5:
+                    flag = false;
+                    break;
+                default:
+                    System.out.println("Enter valied Input.");
+                    break;
+            }
+        }
+    }
+}
