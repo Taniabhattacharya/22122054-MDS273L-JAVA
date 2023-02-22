@@ -57,7 +57,7 @@ public class LAB2{
                             System.out.print(arr[i]+",");
                         }
                     }
-
+   
 					break;
 				}
 				case 2: {
