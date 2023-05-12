@@ -127,21 +127,36 @@ Enter your choice:
 1. Encrypt message
 2. Decrypt message
 3. Exit
+
+
 1
 Enter message to encrypt:
+
 abc
-Encrypted message: XYZ
+
+Encrypted message:
+
+XYZ
+
+
 Enter your choice:
 1. Encrypt message
 2. Decrypt message
 3. Exit
+
+
 2
+
 Enter message to decrypt:
 xyz
+
+
 Decrypted message: UVW
 Enter your choice:
 1. Encrypt message
 2. Decrypt message
 3. Exit
+
+
 3
 Exiting program...
