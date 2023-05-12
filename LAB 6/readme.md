@@ -24,3 +24,55 @@ Displays the details of all students.
 Save the details of each student in a file, with the student name as filename.
 
 Note: Make use of functions to implement the menu options.
+----------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT
+Menu:
+1. Add a student
+2. Search a student
+3. Update a student
+0. Exit
+Enter your choice: 1
+Enter the student name: Tania
+Enter the student Registeration number: 22122054
+Enter the student Class: Msc DS A
+Enter the student Department: DS
+Enter the student phone number: 7980971384
+Enter the student Email: asd@gmail
+Student Added Succesfulll
+Name : Tania
+Student Class : Msc DS A
+Student Department : DS
+Phone Number : 7980971384
+Email : asd@gmail
+Registration Number : 22122054
+Menu:
+1. Add a student
+2. Search a student
+3. Update a student
+0. Exit
+Enter your choice: 2
+Menu:
+1. Search by name
+2. Search by roll number
+0. Exit
+Enter your choice: 1
+Enter the name of the student to search for: Tania
+Name : Tania
+Student Class : Msc DS A
+Student Department : DS
+Phone Number : 7980971384
+Email : asd@gmail
+Registration Number : 22122054
+Menu:
+1. Search by name
+2. Search by roll number
+0. Exit
+Enter your choice: 0
+Exiting...
+Menu:
+1. Add a student
+2. Search a student
+3. Update a student
+0. Exit
+Enter your choice: 0
+Exiting...
