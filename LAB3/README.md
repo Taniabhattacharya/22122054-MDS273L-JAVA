@@ -21,3 +21,72 @@ One two-dimensional string array storing the details of up to 1024 students
 A menu-driven main method implementing the functions and functionality
 Plan your program with a flow chart before starting with coding.
 Since you are using functions, plan what should be the returning values and how to implement them.
+
+******************************************************************************************************
+OUTPUT
+
+Menu
+
+1. Collect Details
+
+2. Display Details
+
+4. Search Details
+
+5. Exit
+
+
+Enter your choice: 1
+
+Please enter the name of the student: Tania
+
+Please enter the Register Number: 22122054
+
+Please enter the Email: abc@gmail.com
+
+Please enter the Class: MSC
+
+Please enter the Department: DS
+
+Details of the students are successfully entered!
+
+
+Menu
+
+1. Collect Details
+2. Display Details
+3. Search Details
+4. Exit
+
+Enter your choice: 2
+
+Please enter the name of the student: Tania
+
+Name: Tania
+
+Register Number: 22122054
+
+Email: abc@gmail.com
+
+Class: MSC
+
+Department: DS
+
+Menu
+
+1. Collect Details
+2. Display Details
+3. Search Details
+4. Exit
+
+
+Enter your choice: 3
+
+Menu
+
+1. Collect Details
+2. Display Details
+3. Search Details
+4. Exit
+
+Enter your choice: 4
