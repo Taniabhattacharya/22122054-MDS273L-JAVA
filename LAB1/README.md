@@ -3,10 +3,15 @@ Write a Java Program that will collect an employee's basic details that fall int
 
 Note: Your program should be neatly organized, with appropriate comments, variable names, proper input output formatting, and necessary validations.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
 Please enter the name of the Employee : Tania
+
 Please enter the age of the Employee : 25
+
 Please enter the gender of the Employee (m/f): f
+
 Please enter the state of the Employee : wb
+
 Please enter the company name of the Employee : myntra
 
 Employee Details are:
