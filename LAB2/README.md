@@ -23,3 +23,79 @@ Provide necessary validations that the user enters only valid names that are not
 Removing a name should not create empty space inside the array!
 
 Format your results properly!!
+
+
+OUTPUT
+
+***************************************
+
+1.Enter a name.
+
+2.Search for a name.
+
+3.Remove a name
+
+0.Exit
+
+***************************************
+
+Enter Your Choice:1
+
+Enter the name:
+
+TANIA
+
+TANIA added successfully.
+
+TANIA,***************************************
+
+1.Enter a name.
+
+2.Search for a name.
+
+3.Remove a name
+
+0.Exit
+
+***************************************
+
+Enter Your Choice:2
+
+Search Name: TANIA
+
+TANIA is in the list at 1th position
+
+***************************************
+
+1.Enter a name.
+
+2.Search for a name.
+
+3.Remove a name
+
+0.Exit
+
+***************************************
+
+Enter Your Choice:3 
+
+Enter name: TANIA
+
+-----------------------------------
+
+Name Successfully Removed.
+
+TANIA,***************************************
+
+1.Enter a name.
+
+2.Search for a name.
+
+3.Remove a name
+
+0.Exit
+
+***************************************
+
+
+Enter Your Choice:0
