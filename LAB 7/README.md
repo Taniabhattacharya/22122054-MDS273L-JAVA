@@ -1,4 +1,4 @@
-Lab 7
+# QUESTION
 Create a new folder in git named 'Lab 7' for the following question and solve the following: create a flowchart and document the results, constraints, etc., in the README.md file for the lab.
 
 Given the famous iris dataset, find the 5-point summary [Mean, Median, Mode, Min, Max] for the attributes: SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm.
@@ -7,7 +7,13 @@ Once the overall summary statistics have been calculated, identify the summary s
 
 Present your results in the appropriate format and write the results in a file.
 
-OUTPUT
+
+## FLOWCHART
+
+![LAB F7](https://github.com/Taniabhattacharya/22122054-MDS273L-JAVA/assets/50802565/34c05652-2a14-4108-a814-20160951d05b)
+
+
+# OUTPUT
 
 file exist......
 
