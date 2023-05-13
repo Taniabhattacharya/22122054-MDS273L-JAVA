@@ -4,6 +4,14 @@ Write a Java Program that will collect an employee's basic details that fall int
 Note: Your program should be neatly organized, with appropriate comments, variable names, proper input output formatting, and necessary validations.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+FLOWCHART:
+
+![image](https://github.com/Taniabhattacharya/22122054-MDS273L-JAVA/assets/50802565/10983ce7-0f54-43a3-9109-4c154a714120)
+
+
+
+OUTPUT:
+
 Please enter the name of the Employee : Tania
 
 Please enter the age of the Employee : 25
