@@ -18,6 +18,12 @@ You need to draw a flowchart, and structure your results and program description
 
 **********************************************************************************************************************
 
+FLOW CHART
+
+
+![image](https://github.com/Taniabhattacharya/22122054-MDS273L-JAVA/assets/50802565/85d8882e-3595-43b8-93f3-52f9a1b2916f)
+
+
 OUTPUT
 
 1. Initialize the customer
