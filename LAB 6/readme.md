@@ -1,3 +1,4 @@
+# QUESTION
 Create a Student class, that will store the details of the Student, below mentioned are the attributes of a student.
 Reg. No.
 Name
@@ -26,8 +27,12 @@ Save the details of each student in a file, with the student name as filename.
 Note: Make use of functions to implement the menu options.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+# FLOWCHART
+![image](https://github.com/Taniabhattacharya/22122054-MDS273L-JAVA/assets/50802565/342df854-7c08-4e31-addc-a14f38664e2b)
 
-OUTPUT
+
+
+# OUTPUT
 
 
 Menu:
