@@ -1,4 +1,4 @@
-Lab Exercise Question
+# Question
 
 You are supposed to create a menu-driven program that has the following menu options:
 
@@ -25,7 +25,14 @@ Removing a name should not create empty space inside the array!
 Format your results properly!!
 
 
-OUTPUT
+# FLOWCHART
+
+
+![image](https://github.com/Taniabhattacharya/22122054-MDS273L-JAVA/assets/50802565/79963983-4cc0-4982-84aa-ad164b297683)
+
+
+
+# OUTPUT
 
 ***************************************
 
